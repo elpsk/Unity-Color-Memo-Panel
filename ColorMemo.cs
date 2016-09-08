@@ -1,4 +1,15 @@
-﻿using UnityEngine;
+﻿//
+//  ColorMemo.cs
+//  Unity3D editor plugin
+//
+//  Created by Alberto Pasca
+//  Copyright © 2016 albertopasca.it. All rights reserved.
+//
+//
+// Version 0.1 - draft.
+//
+
+using UnityEngine;
 using UnityEditor;
 
 public class ColorMemo : EditorWindow
@@ -9,6 +20,7 @@ public class ColorMemo : EditorWindow
 	Color color4;
 	Color color5;
 
+	// the menu item
 	[MenuItem ("Window/ColorMemo")]
 	static void Init ()
 	{
@@ -17,6 +29,9 @@ public class ColorMemo : EditorWindow
 
 	void OnGUI ()
 	{
+		//
+		// the color fields on editor
+		//
 		color1 = new Color (0, 0, 0);
 		color1 = EditorGUILayout.ColorField ("HEX:", color1);
 		EditorGUILayout.Separator ();
@@ -37,6 +52,9 @@ public class ColorMemo : EditorWindow
 		color5 = EditorGUILayout.ColorField ("HEX:", color5);
 		EditorGUILayout.Separator ();
 
+		//
+		// enable fields
+		//
 		GUI.enabled = true;
 	}
 }
