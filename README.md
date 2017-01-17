@@ -1,25 +1,35 @@
-# Unity3D - Color-Set memo editor plugin
+# Unity3D - Color Palette (Editor Plugin)
 
-A Unity3d editor plugin to save a custom set colors for your projects.
+A Unity3d editor plugin to save/use a custom color palette for your projects.
 
 ---
 ### How to use?
-Drag the source *C#* code (**ColorMemo.cs**) file in your projects.  
-That's all!
+1) Import the **Color-Memo-Palette.unitypackage** or double click on it to install.  
 
-Open menu **Window->ColorMemo** to open the new panel. Drag where you want.
+![menu](how-import.png)
 
-![menu](menu.png)
+2) Open menu **Window->Color Palette** to open the new panel.  
+Drag and snap where you want.
 
-![screen](demo.png)
+---
 
-### Limitations:
-As version 0.1 of this plugin, you can add new colors editing the source code file.
+How it appear after snapped in the editor:  
+![screen](panel-01.png)
 
-### Todo:
-- Add colors direct from Panel
-- Save added colors in the storage
+You can add colors, change, edit and what you want:  
+![screen](panel-02.png)
+![screen](panel-03.png)
+
+Selecting your **gameObject**, and next "*Apply*" you can change color directly from the palette:  
+![screen](panel-04.png)
+![screen](panel-05.png)
+
+Data is automatically saved in your project folder. In particular to the "**Assets/Resources/_color-data.dat**".  
+You can use this file to copy/paste in another project or to backup.  
+![screen](store.png)
+
+####Limitation
+- Not a limitation, but a dev limit, you can add max 15 colors (but you can change it from code).
 
 
-Feel free to update this snippet or wait my future updates... when i'm inspired :)
-
+Feel free to update this snippet and ask for a pull request.
